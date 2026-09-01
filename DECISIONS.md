@@ -2,7 +2,7 @@
 
 What was tried, what it cost, and why each choice was made. Written while building, in order.
 
-## 1 September 2026
+## 27th July 2026
 
 ### Tests 1 and 7 before the implementation
 
