@@ -1,6 +1,6 @@
 # Carrying per-object state through an API that has no room for it
 
-[![build and test](https://github.com/nilot-pal/mantissa-state-channel/actions/workflows/ci.yml/badge.svg)](https://github.com/nilot-pal/mantissa-state-channel/actions/workflows/ci.yml)
+[![build and test](https://github.com/nilot-pal/mantissa-state-channel/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/nilot-pal/mantissa-state-channel/actions/workflows/ci.yml)
 
 A Lagrangian particle tracker inside a closed commercial solver. Particles migrate between MPI
 ranks as they cross partition boundaries. The solver's user API exposes a fixed set of per-particle
