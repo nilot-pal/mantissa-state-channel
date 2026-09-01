@@ -298,7 +298,8 @@ where a grain falls between two powers of two, which the figure above shows.
 4. **A carrier that is not a diameter.** The whole argument rests on the low bits being below the
    resolution of everything downstream. Applied to a field the physics resolves, a velocity
    component or a temperature, the same code is a bug with a proof attached.
-5. **One platform.** Built and tested with one compiler. See what to distrust, below.
+5. **One architecture.** Built and tested on gcc 13, clang 18 and MSVC, but only on x86-64. The
+   layout asserts IEEE-754 binary32 at compile time; a big-endian target has not been tried.
 
 **What does not break it**, because the tests say so rather than because it seems unlikely:
 inadmissible carriers of every class, ten thousand repeated updates on one particle without drift,
@@ -336,6 +337,12 @@ payloads above the maximum, and ten million random carrier and payload pairs.
   reason. It costs nothing in a loop that was never going to vectorise, which is what a real
   tracking loop with a cell search in it looks like, but that is an argument to check on your own
   solver rather than to take on trust.
+- **Three compilers, each of which found something different.** gcc 13, clang 18 and MSVC, strict
+  and fast maths, six configurations in CI. The first run failed four of the six: clang rejects a
+  loop pragma the other two accept, gcc's fast maths is aggressive enough to break assumptions
+  MSVC's leaves alone, and clang's optimiser disproved a performance ordering the benchmark had been
+  asserting. One compiler would have found none of them, which is why the claim is worth making
+  this way rather than by saying the code looks portable.
 - **Fast maths does not break the guards, but it does delete the tests that describe them.** The
   default build is strict. The suite also runs under `-ffast-math` and `/fp:fast`, in CI, on every
   compiler.
