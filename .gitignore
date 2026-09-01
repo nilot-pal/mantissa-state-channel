@@ -1,0 +1,5 @@
+build/
+build-fast/
+
+# Working documents. Not part of the artifact and not for publication.
+BRIEF.md

@@ -1,0 +1,49 @@
+name: build and test
+
+# The repository claims the technique is portable and that the guards do not
+# depend on strict floating point semantics. Both claims were made on one
+# compiler, which is not a claim. This builds on three and runs the suite twice
+# on each, once strict and once with fast maths.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: ${{ matrix.name }}${{ matrix.fast && ', fast maths' || '' }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - { name: gcc,   os: ubuntu-latest,  cc: gcc,   cxx: g++,     fast: false }
+          - { name: gcc,   os: ubuntu-latest,  cc: gcc,   cxx: g++,     fast: true  }
+          - { name: clang, os: ubuntu-latest,  cc: clang, cxx: clang++, fast: false }
+          - { name: clang, os: ubuntu-latest,  cc: clang, cxx: clang++, fast: true  }
+          - { name: msvc,  os: windows-latest, cc: '',    cxx: '',      fast: false }
+          - { name: msvc,  os: windows-latest, cc: '',    cxx: '',      fast: true  }
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Configure
+        env:
+          CC: ${{ matrix.cc }}
+          CXX: ${{ matrix.cxx }}
+        run: >
+          cmake -S . -B build
+          -DCMAKE_BUILD_TYPE=Release
+          -DSTATE_CHANNEL_FAST_MATH=${{ matrix.fast && 'ON' || 'OFF' }}
+
+      - name: Build
+        run: cmake --build build --config Release
+
+      - name: Test
+        run: ctest --test-dir build -C Release --output-on-failure
+
+      - name: Compiler version
+        if: runner.os == 'Linux'
+        run: ${{ matrix.cxx }} --version

@@ -1,0 +1,11 @@
+field,value
+before_bits,00111000110100011011011100010111
+after_bits,00111000110100011110101110110011
+true_diameter_um,99.999997
+read_diameter_um,100.097990
+stripped_diameter_um,99.897385
+diameter_error_um,0.097993
+true_state,12.500000
+decoded_state,12.504082
+state_code,11187
+state_error_percent,0.0327

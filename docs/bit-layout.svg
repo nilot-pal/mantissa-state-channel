@@ -1,0 +1,149 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 776 310" width="776" height="310" font-family="ui-sans-serif, -apple-system, Segoe UI, Helvetica, Arial, sans-serif">
+<text x="20" y="24" font-size="14" fill="#767e88" text-anchor="start" font-weight="600">One 100 micrometre grain, before and after the state goes in</text>
+<text x="20" y="52" font-size="11" fill="#8b949e" text-anchor="start" font-weight="normal">as the solver stored it</text>
+<rect x="20" y="60" width="21" height="30" rx="2" fill="#4c8dff" fill-opacity="0.16" stroke="#4c8dff" stroke-opacity="0.35"/>
+<text x="30.5" y="78" font-size="11" fill="#4c8dff" text-anchor="middle" font-weight="normal" font-family="ui-monospace, SFMono-Regular, Consolas, monospace">0</text>
+<rect x="43" y="60" width="21" height="30" rx="2" fill="#4c8dff" fill-opacity="0.16" stroke="#4c8dff" stroke-opacity="0.35"/>
+<text x="53.5" y="78" font-size="11" fill="#4c8dff" text-anchor="middle" font-weight="normal" font-family="ui-monospace, SFMono-Regular, Consolas, monospace">0</text>
+<rect x="66" y="60" width="21" height="30" rx="2" fill="#4c8dff" fill-opacity="0.16" stroke="#4c8dff" stroke-opacity="0.35"/>
+<text x="76.5" y="78" font-size="11" fill="#4c8dff" text-anchor="middle" font-weight="normal" font-family="ui-monospace, SFMono-Regular, Consolas, monospace">1</text>
+<rect x="89" y="60" width="21" height="30" rx="2" fill="#4c8dff" fill-opacity="0.16" stroke="#4c8dff" stroke-opacity="0.35"/>
+<text x="99.5" y="78" font-size="11" fill="#4c8dff" text-anchor="middle" font-weight="normal" font-family="ui-monospace, SFMono-Regular, Consolas, monospace">1</text>
+<rect x="112" y="60" width="21" height="30" rx="2" fill="#4c8dff" fill-opacity="0.16" stroke="#4c8dff" stroke-opacity="0.35"/>
+<text x="122.5" y="78" font-size="11" fill="#4c8dff" text-anchor="middle" font-weight="normal" font-family="ui-monospace, SFMono-Regular, Consolas, monospace">1</text>
+<rect x="135" y="60" width="21" height="30" rx="2" fill="#4c8dff" fill-opacity="0.16" stroke="#4c8dff" stroke-opacity="0.35"/>
+<text x="145.5" y="78" font-size="11" fill="#4c8dff" text-anchor="middle" font-weight="normal" font-family="ui-monospace, SFMono-Regular, Consolas, monospace">0</text>
+<rect x="158" y="60" width="21" height="30" rx="2" fill="#4c8dff" fill-opacity="0.16" stroke="#4c8dff" stroke-opacity="0.35"/>
+<text x="168.5" y="78" font-size="11" fill="#4c8dff" text-anchor="middle" font-weight="normal" font-family="ui-monospace, SFMono-Regular, Consolas, monospace">0</text>
+<rect x="181" y="60" width="21" height="30" rx="2" fill="#4c8dff" fill-opacity="0.16" stroke="#4c8dff" stroke-opacity="0.35"/>
+<text x="191.5" y="78" font-size="11" fill="#4c8dff" text-anchor="middle" font-weight="normal" font-family="ui-monospace, SFMono-Regular, Consolas, monospace">0</text>
+<rect x="204" y="60" width="21" height="30" rx="2" fill="#4c8dff" fill-opacity="0.16" stroke="#4c8dff" stroke-opacity="0.35"/>
+<text x="214.5" y="78" font-size="11" fill="#4c8dff" text-anchor="middle" font-weight="normal" font-family="ui-monospace, SFMono-Regular, Consolas, monospace">1</text>
+<rect x="227" y="60" width="21" height="30" rx="2" fill="#3fb950" fill-opacity="0.16" stroke="#3fb950" stroke-opacity="0.35"/>
+<text x="237.5" y="78" font-size="11" fill="#3fb950" text-anchor="middle" font-weight="normal" font-family="ui-monospace, SFMono-Regular, Consolas, monospace">1</text>
+<rect x="250" y="60" width="21" height="30" rx="2" fill="#3fb950" fill-opacity="0.16" stroke="#3fb950" stroke-opacity="0.35"/>
+<text x="260.5" y="78" font-size="11" fill="#3fb950" text-anchor="middle" font-weight="normal" font-family="ui-monospace, SFMono-Regular, Consolas, monospace">0</text>
+<rect x="273" y="60" width="21" height="30" rx="2" fill="#3fb950" fill-opacity="0.16" stroke="#3fb950" stroke-opacity="0.35"/>
+<text x="283.5" y="78" font-size="11" fill="#3fb950" text-anchor="middle" font-weight="normal" font-family="ui-monospace, SFMono-Regular, Consolas, monospace">1</text>
+<rect x="296" y="60" width="21" height="30" rx="2" fill="#3fb950" fill-opacity="0.16" stroke="#3fb950" stroke-opacity="0.35"/>
+<text x="306.5" y="78" font-size="11" fill="#3fb950" text-anchor="middle" font-weight="normal" font-family="ui-monospace, SFMono-Regular, Consolas, monospace">0</text>
+<rect x="319" y="60" width="21" height="30" rx="2" fill="#3fb950" fill-opacity="0.16" stroke="#3fb950" stroke-opacity="0.35"/>
+<text x="329.5" y="78" font-size="11" fill="#3fb950" text-anchor="middle" font-weight="normal" font-family="ui-monospace, SFMono-Regular, Consolas, monospace">0</text>
+<rect x="342" y="60" width="21" height="30" rx="2" fill="#3fb950" fill-opacity="0.16" stroke="#3fb950" stroke-opacity="0.35"/>
+<text x="352.5" y="78" font-size="11" fill="#3fb950" text-anchor="middle" font-weight="normal" font-family="ui-monospace, SFMono-Regular, Consolas, monospace">0</text>
+<rect x="365" y="60" width="21" height="30" rx="2" fill="#3fb950" fill-opacity="0.16" stroke="#3fb950" stroke-opacity="0.35"/>
+<text x="375.5" y="78" font-size="11" fill="#3fb950" text-anchor="middle" font-weight="normal" font-family="ui-monospace, SFMono-Regular, Consolas, monospace">1</text>
+<rect x="388" y="60" width="21" height="30" rx="2" fill="#3fb950" fill-opacity="0.16" stroke="#3fb950" stroke-opacity="0.35"/>
+<text x="398.5" y="78" font-size="11" fill="#3fb950" text-anchor="middle" font-weight="normal" font-family="ui-monospace, SFMono-Regular, Consolas, monospace">1</text>
+<rect x="411" y="60" width="21" height="30" rx="2" fill="#f0883e" fill-opacity="0.16" stroke="#f0883e" stroke-opacity="0.35"/>
+<text x="421.5" y="78" font-size="11" fill="#f0883e" text-anchor="middle" font-weight="normal" font-family="ui-monospace, SFMono-Regular, Consolas, monospace">0</text>
+<rect x="434" y="60" width="21" height="30" rx="2" fill="#a371f7" fill-opacity="0.16" stroke="#a371f7" stroke-opacity="0.35"/>
+<text x="444.5" y="78" font-size="11" fill="#a371f7" text-anchor="middle" font-weight="normal" font-family="ui-monospace, SFMono-Regular, Consolas, monospace">1</text>
+<rect x="457" y="60" width="21" height="30" rx="2" fill="#a371f7" fill-opacity="0.16" stroke="#a371f7" stroke-opacity="0.35"/>
+<text x="467.5" y="78" font-size="11" fill="#a371f7" text-anchor="middle" font-weight="normal" font-family="ui-monospace, SFMono-Regular, Consolas, monospace">1</text>
+<rect x="480" y="60" width="21" height="30" rx="2" fill="#a371f7" fill-opacity="0.16" stroke="#a371f7" stroke-opacity="0.35"/>
+<text x="490.5" y="78" font-size="11" fill="#a371f7" text-anchor="middle" font-weight="normal" font-family="ui-monospace, SFMono-Regular, Consolas, monospace">0</text>
+<rect x="503" y="60" width="21" height="30" rx="2" fill="#a371f7" fill-opacity="0.16" stroke="#a371f7" stroke-opacity="0.35"/>
+<text x="513.5" y="78" font-size="11" fill="#a371f7" text-anchor="middle" font-weight="normal" font-family="ui-monospace, SFMono-Regular, Consolas, monospace">1</text>
+<rect x="526" y="60" width="21" height="30" rx="2" fill="#a371f7" fill-opacity="0.16" stroke="#a371f7" stroke-opacity="0.35"/>
+<text x="536.5" y="78" font-size="11" fill="#a371f7" text-anchor="middle" font-weight="normal" font-family="ui-monospace, SFMono-Regular, Consolas, monospace">1</text>
+<rect x="549" y="60" width="21" height="30" rx="2" fill="#a371f7" fill-opacity="0.16" stroke="#a371f7" stroke-opacity="0.35"/>
+<text x="559.5" y="78" font-size="11" fill="#a371f7" text-anchor="middle" font-weight="normal" font-family="ui-monospace, SFMono-Regular, Consolas, monospace">1</text>
+<rect x="572" y="60" width="21" height="30" rx="2" fill="#a371f7" fill-opacity="0.16" stroke="#a371f7" stroke-opacity="0.35"/>
+<text x="582.5" y="78" font-size="11" fill="#a371f7" text-anchor="middle" font-weight="normal" font-family="ui-monospace, SFMono-Regular, Consolas, monospace">0</text>
+<rect x="595" y="60" width="21" height="30" rx="2" fill="#a371f7" fill-opacity="0.16" stroke="#a371f7" stroke-opacity="0.35"/>
+<text x="605.5" y="78" font-size="11" fill="#a371f7" text-anchor="middle" font-weight="normal" font-family="ui-monospace, SFMono-Regular, Consolas, monospace">0</text>
+<rect x="618" y="60" width="21" height="30" rx="2" fill="#a371f7" fill-opacity="0.16" stroke="#a371f7" stroke-opacity="0.35"/>
+<text x="628.5" y="78" font-size="11" fill="#a371f7" text-anchor="middle" font-weight="normal" font-family="ui-monospace, SFMono-Regular, Consolas, monospace">0</text>
+<rect x="641" y="60" width="21" height="30" rx="2" fill="#a371f7" fill-opacity="0.16" stroke="#a371f7" stroke-opacity="0.35"/>
+<text x="651.5" y="78" font-size="11" fill="#a371f7" text-anchor="middle" font-weight="normal" font-family="ui-monospace, SFMono-Regular, Consolas, monospace">1</text>
+<rect x="664" y="60" width="21" height="30" rx="2" fill="#a371f7" fill-opacity="0.16" stroke="#a371f7" stroke-opacity="0.35"/>
+<text x="674.5" y="78" font-size="11" fill="#a371f7" text-anchor="middle" font-weight="normal" font-family="ui-monospace, SFMono-Regular, Consolas, monospace">0</text>
+<rect x="687" y="60" width="21" height="30" rx="2" fill="#a371f7" fill-opacity="0.16" stroke="#a371f7" stroke-opacity="0.35"/>
+<text x="697.5" y="78" font-size="11" fill="#a371f7" text-anchor="middle" font-weight="normal" font-family="ui-monospace, SFMono-Regular, Consolas, monospace">1</text>
+<rect x="710" y="60" width="21" height="30" rx="2" fill="#a371f7" fill-opacity="0.16" stroke="#a371f7" stroke-opacity="0.35"/>
+<text x="720.5" y="78" font-size="11" fill="#a371f7" text-anchor="middle" font-weight="normal" font-family="ui-monospace, SFMono-Regular, Consolas, monospace">1</text>
+<rect x="733" y="60" width="21" height="30" rx="2" fill="#a371f7" fill-opacity="0.16" stroke="#a371f7" stroke-opacity="0.35"/>
+<text x="743.5" y="78" font-size="11" fill="#a371f7" text-anchor="middle" font-weight="normal" font-family="ui-monospace, SFMono-Regular, Consolas, monospace">1</text>
+<text x="20" y="112" font-size="11" fill="#8b949e" text-anchor="start" font-weight="normal">with the state packed in</text>
+<rect x="20" y="120" width="21" height="30" rx="2" fill="#4c8dff" fill-opacity="0.16" stroke="#4c8dff" stroke-opacity="0.35"/>
+<text x="30.5" y="138" font-size="11" fill="#4c8dff" text-anchor="middle" font-weight="normal" font-family="ui-monospace, SFMono-Regular, Consolas, monospace">0</text>
+<rect x="43" y="120" width="21" height="30" rx="2" fill="#4c8dff" fill-opacity="0.16" stroke="#4c8dff" stroke-opacity="0.35"/>
+<text x="53.5" y="138" font-size="11" fill="#4c8dff" text-anchor="middle" font-weight="normal" font-family="ui-monospace, SFMono-Regular, Consolas, monospace">0</text>
+<rect x="66" y="120" width="21" height="30" rx="2" fill="#4c8dff" fill-opacity="0.16" stroke="#4c8dff" stroke-opacity="0.35"/>
+<text x="76.5" y="138" font-size="11" fill="#4c8dff" text-anchor="middle" font-weight="normal" font-family="ui-monospace, SFMono-Regular, Consolas, monospace">1</text>
+<rect x="89" y="120" width="21" height="30" rx="2" fill="#4c8dff" fill-opacity="0.16" stroke="#4c8dff" stroke-opacity="0.35"/>
+<text x="99.5" y="138" font-size="11" fill="#4c8dff" text-anchor="middle" font-weight="normal" font-family="ui-monospace, SFMono-Regular, Consolas, monospace">1</text>
+<rect x="112" y="120" width="21" height="30" rx="2" fill="#4c8dff" fill-opacity="0.16" stroke="#4c8dff" stroke-opacity="0.35"/>
+<text x="122.5" y="138" font-size="11" fill="#4c8dff" text-anchor="middle" font-weight="normal" font-family="ui-monospace, SFMono-Regular, Consolas, monospace">1</text>
+<rect x="135" y="120" width="21" height="30" rx="2" fill="#4c8dff" fill-opacity="0.16" stroke="#4c8dff" stroke-opacity="0.35"/>
+<text x="145.5" y="138" font-size="11" fill="#4c8dff" text-anchor="middle" font-weight="normal" font-family="ui-monospace, SFMono-Regular, Consolas, monospace">0</text>
+<rect x="158" y="120" width="21" height="30" rx="2" fill="#4c8dff" fill-opacity="0.16" stroke="#4c8dff" stroke-opacity="0.35"/>
+<text x="168.5" y="138" font-size="11" fill="#4c8dff" text-anchor="middle" font-weight="normal" font-family="ui-monospace, SFMono-Regular, Consolas, monospace">0</text>
+<rect x="181" y="120" width="21" height="30" rx="2" fill="#4c8dff" fill-opacity="0.16" stroke="#4c8dff" stroke-opacity="0.35"/>
+<text x="191.5" y="138" font-size="11" fill="#4c8dff" text-anchor="middle" font-weight="normal" font-family="ui-monospace, SFMono-Regular, Consolas, monospace">0</text>
+<rect x="204" y="120" width="21" height="30" rx="2" fill="#4c8dff" fill-opacity="0.16" stroke="#4c8dff" stroke-opacity="0.35"/>
+<text x="214.5" y="138" font-size="11" fill="#4c8dff" text-anchor="middle" font-weight="normal" font-family="ui-monospace, SFMono-Regular, Consolas, monospace">1</text>
+<rect x="227" y="120" width="21" height="30" rx="2" fill="#3fb950" fill-opacity="0.16" stroke="#3fb950" stroke-opacity="0.35"/>
+<text x="237.5" y="138" font-size="11" fill="#3fb950" text-anchor="middle" font-weight="normal" font-family="ui-monospace, SFMono-Regular, Consolas, monospace">1</text>
+<rect x="250" y="120" width="21" height="30" rx="2" fill="#3fb950" fill-opacity="0.16" stroke="#3fb950" stroke-opacity="0.35"/>
+<text x="260.5" y="138" font-size="11" fill="#3fb950" text-anchor="middle" font-weight="normal" font-family="ui-monospace, SFMono-Regular, Consolas, monospace">0</text>
+<rect x="273" y="120" width="21" height="30" rx="2" fill="#3fb950" fill-opacity="0.16" stroke="#3fb950" stroke-opacity="0.35"/>
+<text x="283.5" y="138" font-size="11" fill="#3fb950" text-anchor="middle" font-weight="normal" font-family="ui-monospace, SFMono-Regular, Consolas, monospace">1</text>
+<rect x="296" y="120" width="21" height="30" rx="2" fill="#3fb950" fill-opacity="0.16" stroke="#3fb950" stroke-opacity="0.35"/>
+<text x="306.5" y="138" font-size="11" fill="#3fb950" text-anchor="middle" font-weight="normal" font-family="ui-monospace, SFMono-Regular, Consolas, monospace">0</text>
+<rect x="319" y="120" width="21" height="30" rx="2" fill="#3fb950" fill-opacity="0.16" stroke="#3fb950" stroke-opacity="0.35"/>
+<text x="329.5" y="138" font-size="11" fill="#3fb950" text-anchor="middle" font-weight="normal" font-family="ui-monospace, SFMono-Regular, Consolas, monospace">0</text>
+<rect x="342" y="120" width="21" height="30" rx="2" fill="#3fb950" fill-opacity="0.16" stroke="#3fb950" stroke-opacity="0.35"/>
+<text x="352.5" y="138" font-size="11" fill="#3fb950" text-anchor="middle" font-weight="normal" font-family="ui-monospace, SFMono-Regular, Consolas, monospace">0</text>
+<rect x="365" y="120" width="21" height="30" rx="2" fill="#3fb950" fill-opacity="0.16" stroke="#3fb950" stroke-opacity="0.35"/>
+<text x="375.5" y="138" font-size="11" fill="#3fb950" text-anchor="middle" font-weight="normal" font-family="ui-monospace, SFMono-Regular, Consolas, monospace">1</text>
+<rect x="388" y="120" width="21" height="30" rx="2" fill="#3fb950" fill-opacity="0.16" stroke="#3fb950" stroke-opacity="0.35"/>
+<text x="398.5" y="138" font-size="11" fill="#3fb950" text-anchor="middle" font-weight="normal" font-family="ui-monospace, SFMono-Regular, Consolas, monospace">1</text>
+<rect x="411" y="120" width="21" height="30" rx="2" fill="#f0883e" fill-opacity="0.38" stroke="#f0883e" stroke-opacity="0.9"/>
+<text x="421.5" y="138" font-size="11" fill="#f0883e" text-anchor="middle" font-weight="normal" font-family="ui-monospace, SFMono-Regular, Consolas, monospace">1</text>
+<rect x="434" y="120" width="21" height="30" rx="2" fill="#a371f7" fill-opacity="0.16" stroke="#a371f7" stroke-opacity="0.35"/>
+<text x="444.5" y="138" font-size="11" fill="#a371f7" text-anchor="middle" font-weight="normal" font-family="ui-monospace, SFMono-Regular, Consolas, monospace">1</text>
+<rect x="457" y="120" width="21" height="30" rx="2" fill="#a371f7" fill-opacity="0.38" stroke="#a371f7" stroke-opacity="0.9"/>
+<text x="467.5" y="138" font-size="11" fill="#a371f7" text-anchor="middle" font-weight="normal" font-family="ui-monospace, SFMono-Regular, Consolas, monospace">0</text>
+<rect x="480" y="120" width="21" height="30" rx="2" fill="#a371f7" fill-opacity="0.38" stroke="#a371f7" stroke-opacity="0.9"/>
+<text x="490.5" y="138" font-size="11" fill="#a371f7" text-anchor="middle" font-weight="normal" font-family="ui-monospace, SFMono-Regular, Consolas, monospace">1</text>
+<rect x="503" y="120" width="21" height="30" rx="2" fill="#a371f7" fill-opacity="0.38" stroke="#a371f7" stroke-opacity="0.9"/>
+<text x="513.5" y="138" font-size="11" fill="#a371f7" text-anchor="middle" font-weight="normal" font-family="ui-monospace, SFMono-Regular, Consolas, monospace">0</text>
+<rect x="526" y="120" width="21" height="30" rx="2" fill="#a371f7" fill-opacity="0.16" stroke="#a371f7" stroke-opacity="0.35"/>
+<text x="536.5" y="138" font-size="11" fill="#a371f7" text-anchor="middle" font-weight="normal" font-family="ui-monospace, SFMono-Regular, Consolas, monospace">1</text>
+<rect x="549" y="120" width="21" height="30" rx="2" fill="#a371f7" fill-opacity="0.16" stroke="#a371f7" stroke-opacity="0.35"/>
+<text x="559.5" y="138" font-size="11" fill="#a371f7" text-anchor="middle" font-weight="normal" font-family="ui-monospace, SFMono-Regular, Consolas, monospace">1</text>
+<rect x="572" y="120" width="21" height="30" rx="2" fill="#a371f7" fill-opacity="0.38" stroke="#a371f7" stroke-opacity="0.9"/>
+<text x="582.5" y="138" font-size="11" fill="#a371f7" text-anchor="middle" font-weight="normal" font-family="ui-monospace, SFMono-Regular, Consolas, monospace">1</text>
+<rect x="595" y="120" width="21" height="30" rx="2" fill="#a371f7" fill-opacity="0.16" stroke="#a371f7" stroke-opacity="0.35"/>
+<text x="605.5" y="138" font-size="11" fill="#a371f7" text-anchor="middle" font-weight="normal" font-family="ui-monospace, SFMono-Regular, Consolas, monospace">0</text>
+<rect x="618" y="120" width="21" height="30" rx="2" fill="#a371f7" fill-opacity="0.38" stroke="#a371f7" stroke-opacity="0.9"/>
+<text x="628.5" y="138" font-size="11" fill="#a371f7" text-anchor="middle" font-weight="normal" font-family="ui-monospace, SFMono-Regular, Consolas, monospace">1</text>
+<rect x="641" y="120" width="21" height="30" rx="2" fill="#a371f7" fill-opacity="0.16" stroke="#a371f7" stroke-opacity="0.35"/>
+<text x="651.5" y="138" font-size="11" fill="#a371f7" text-anchor="middle" font-weight="normal" font-family="ui-monospace, SFMono-Regular, Consolas, monospace">1</text>
+<rect x="664" y="120" width="21" height="30" rx="2" fill="#a371f7" fill-opacity="0.16" stroke="#a371f7" stroke-opacity="0.35"/>
+<text x="674.5" y="138" font-size="11" fill="#a371f7" text-anchor="middle" font-weight="normal" font-family="ui-monospace, SFMono-Regular, Consolas, monospace">0</text>
+<rect x="687" y="120" width="21" height="30" rx="2" fill="#a371f7" fill-opacity="0.38" stroke="#a371f7" stroke-opacity="0.9"/>
+<text x="697.5" y="138" font-size="11" fill="#a371f7" text-anchor="middle" font-weight="normal" font-family="ui-monospace, SFMono-Regular, Consolas, monospace">0</text>
+<rect x="710" y="120" width="21" height="30" rx="2" fill="#a371f7" fill-opacity="0.16" stroke="#a371f7" stroke-opacity="0.35"/>
+<text x="720.5" y="138" font-size="11" fill="#a371f7" text-anchor="middle" font-weight="normal" font-family="ui-monospace, SFMono-Regular, Consolas, monospace">1</text>
+<rect x="733" y="120" width="21" height="30" rx="2" fill="#a371f7" fill-opacity="0.16" stroke="#a371f7" stroke-opacity="0.35"/>
+<text x="743.5" y="138" font-size="11" fill="#a371f7" text-anchor="middle" font-weight="normal" font-family="ui-monospace, SFMono-Regular, Consolas, monospace">1</text>
+<path d="M20 158 L20 163 L41 163 L41 158" fill="none" stroke="#4c8dff" stroke-opacity="0.6"/>
+<text x="30.5" y="177" font-size="10.5" fill="#4c8dff" text-anchor="middle" font-weight="normal">sign</text>
+<path d="M43 158 L43 163 L225 163 L225 158" fill="none" stroke="#4c8dff" stroke-opacity="0.6"/>
+<text x="134" y="177" font-size="10.5" fill="#4c8dff" text-anchor="middle" font-weight="normal">exponent</text>
+<path d="M227 158 L227 163 L409 163 L409 158" fill="none" stroke="#3fb950" stroke-opacity="0.6"/>
+<text x="318" y="177" font-size="10.5" fill="#3fb950" text-anchor="middle" font-weight="normal">diameter keeps 8 bits</text>
+<path d="M411 158 L411 163 L432 163 L432 158" fill="none" stroke="#f0883e" stroke-opacity="0.6"/>
+<text x="421.5" y="177" font-size="10.5" fill="#f0883e" text-anchor="middle" font-weight="normal">flag</text>
+<path d="M434 158 L434 163 L754 163 L754 158" fill="none" stroke="#a371f7" stroke-opacity="0.6"/>
+<text x="594" y="177" font-size="10.5" fill="#a371f7" text-anchor="middle" font-weight="normal">payload, 14 bits</text>
+<text x="20" y="206" font-size="11.5" fill="#767e88" text-anchor="start" font-weight="normal">true diameter</text>
+<text x="756" y="206" font-size="11.5" fill="#8b949e" text-anchor="end" font-weight="normal" font-family="ui-monospace, SFMono-Regular, Consolas, monospace">100.000 um</text>
+<text x="20" y="226" font-size="11.5" fill="#767e88" text-anchor="start" font-weight="normal">read back by code that knows nothing about any of this</text>
+<text x="756" y="226" font-size="11.5" fill="#3fb950" text-anchor="end" font-weight="normal" font-family="ui-monospace, SFMono-Regular, Consolas, monospace">100.098 um, out by 0.098 um</text>
+<text x="20" y="246" font-size="11.5" fill="#767e88" text-anchor="start" font-weight="normal">state carried through, 12.500 goes in</text>
+<text x="756" y="246" font-size="11.5" fill="#a371f7" text-anchor="end" font-weight="normal" font-family="ui-monospace, SFMono-Regular, Consolas, monospace">12.504 comes out, out by 0.033 per cent</text>
+</svg>
