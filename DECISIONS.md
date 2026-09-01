@@ -429,6 +429,26 @@ The README claim that the suite passed under fast maths was true only on MSVC, a
 MSVC's version of the flag is milder. It has been rewritten to say what is actually true, which is
 more interesting than what it used to say.
 
+### A performance assertion is not a test
+
+The second CI run got gcc and MSVC green in both configurations and left clang failing on one thing:
+`CHECK(ctx, added_ns > 0.0)` in the benchmark, commented at the time as *it is not free, and a zero
+here means a bug*.
+
+It was not a bug. On clang, disabling vectorisation on the baseline loop costs more than the channel
+adds, so the difference comes out negative. The channel was fine. The assertion was wrong, and it was
+wrong in a way worth writing down: it asserted a **performance ordering**, which depends on the
+optimiser, the flags and a shared machine, none of which are properties of the code under test.
+
+Removed, and the reasoning left in the file where the assertion used to be. The sanity checks stay,
+because they catch the benchmark measuring nothing at all, which would otherwise be reported as an
+excellent result. Everything else the benchmark produces is reported rather than asserted, which is
+what should have been true of this one from the start.
+
+Three compilers found three different things: a pragma clang alone rejects, a set of IEEE assumptions
+only gcc's fast maths is aggressive enough to break, and a performance assumption only clang's
+optimiser disproves. One compiler would have found none of them.
+
 ### Still open
 
 Strict aliasing. `test_type_punning` is the test whose subject is undefined behaviour, so it is the

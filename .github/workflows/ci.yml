@@ -27,7 +27,7 @@ jobs:
           - { name: msvc,  os: windows-latest, cc: '',    cxx: '',      fast: true  }
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       - name: Configure
         env:
