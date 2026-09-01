@@ -18,18 +18,23 @@ namespace sc = state_channel;
 int main() {
     check::context ctx("guards, sign");
 
-    const float negatives[] = {
-        -1.0f,
-        -1.0e-4f,                       // a plausible diameter, negated
-        -3.40282347e+38f,               // most negative finite
-        -1.17549435e-38f,               // smallest negative normal
-        sc::from_bits(0x80000000u),     // -0
-        sc::from_bits(0x80004000u),     // negative denormal with the flag set
-        sc::from_bits(0xBF804000u),     // negative normal with the flag set
+    // Held as bit patterns rather than as float literals in an array. Under
+    // fast maths the compiler is allowed to assume signed zero does not occur,
+    // so a -0.0f sitting in a const float array can be stored as +0.0f and the
+    // sign this test is about disappears before the test runs. The bits cannot
+    // be optimised away in the same manner.
+    const std::uint32_t negatives[] = {
+        0xBF800000u,   // -1
+        0xB8D1B717u,   // a plausible diameter, negated
+        0xFF7FFFFFu,   // most negative finite
+        0x80800000u,   // smallest negative normal
+        0x80000000u,   // -0
+        0x80004000u,   // negative denormal with the flag set
+        0xBF804000u,   // negative normal with the flag set
     };
 
-    for (const float v : negatives) {
-        const std::uint32_t bits = sc::to_bits(v);
+    for (const std::uint32_t bits : negatives) {
+        const float v = sc::from_bits(bits);
         CHECK(ctx, (bits & sc::sign_mask) != 0u);
         CHECK(ctx, !sc::admissible(v));
         CHECK(ctx, !sc::has_payload(v));

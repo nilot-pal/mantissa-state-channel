@@ -3,3 +3,6 @@ build-fast/
 
 # Working documents. Not part of the artifact and not for publication.
 BRIEF.md
+
+# Shell transcripts and scratch notes, not part of the artifact.
+*.txt

@@ -6,6 +6,23 @@
 
 #include <cstdio>
 
+// True when this translation unit is compiled with fast maths.
+//
+// Under it the compiler is told that NaN, infinity and signed zero do not
+// occur, and is entitled to act on that: std::isnan folds to false, a NaN
+// compares equal to itself, and -0.0f may be stored as +0.0f. Clang says so out
+// loud, with -Wnan-infinity-disabled.
+//
+// That makes any assertion *about those values as floats* undefined, so those
+// assertions are compiled out below. Assertions about the library are not: the
+// guards classify the integer bits obtained through memcpy, which no floating
+// point flag can reach, and they are checked in both configurations.
+#if defined(__FAST_MATH__) || defined(_M_FP_FAST)
+#  define STATE_CHANNEL_FAST_MATH 1
+#else
+#  define STATE_CHANNEL_FAST_MATH 0
+#endif
+
 namespace check {
 
 struct context {

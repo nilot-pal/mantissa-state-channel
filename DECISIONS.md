@@ -393,9 +393,50 @@ resolved and where the diameter is read.
 The geometry is a published multi-stage compressor case rather than proprietary, which is why the
 number can be here at all.
 
-### Still not verified
+### The other compilers, and what they found
 
-One compiler. GCC and Clang would be worth doing. `test_type_punning` is the one most likely to find
-something, since it is the test whose subject is undefined behaviour and MSVC is the least
-aggressive of the three about strict aliasing. No other compiler is installed on this machine, so
-this stays open rather than being quietly claimed.
+Six configurations in CI: gcc, clang and MSVC, each strict and with fast maths. The first run failed
+four of the six, and every failure was worth having.
+
+**A real bug, caught by clang on the strict build.** `bench_channel.cpp` disabled vectorisation with
+`#pragma clang loop vectorize(off)`. Clang's grammar is `enable`, `disable` or `assume_safety`, and
+`off` is not one of them, so it is a hard error rather than an ignored pragma. MSVC never saw it,
+because the MSVC branch of that macro is a different spelling entirely. A conditional compiled on one
+compiler is a conditional that has not been compiled.
+
+**Fast maths broke four assertions, none of them in the library.** On gcc, `test_guards_non_finite`
+failed at `std::isnan(nan_value)`, at `!(nan_value == nan_value)` and at `std::isinf(inf_value)`. On
+MSVC only the NaN self comparison failed, because `/fp:fast` is less aggressive than `-ffast-math`.
+And `test_guards_sign` failed on gcc at `(bits & sign_mask) != 0`, which took a moment: the test held
+its negative values in a `const float` array, one of them `-0.0f`, and `-ffast-math` implies
+`-fno-signed-zeros`, so the compiler is entitled to store it as `+0.0f`. The sign the test was about
+had gone before the test ran.
+
+In every case the corresponding claim about the library passed. `admissible` refused all of them,
+because it reads the integer bits from `memcpy` and never touches the float.
+
+That is the whole argument for writing the guards this way, and it now has evidence rather than
+reasoning behind it: **the same flag that deleted those assertions would have deleted guards written
+as `d > 0.0` and `std::isnan(d)`.** The natural way to write them is the way that quietly stops
+working when somebody sets a flag in a build you do not control.
+
+So the fix is not to weaken the tests. The assertions about IEEE semantics are compiled out under
+fast maths, where they are undefined, and the assertions about the library are not, and the sign
+test now holds bit patterns instead of float literals. Clang flags the underlying issue itself with
+`-Wnan-infinity-disabled`, which is a good warning and worth knowing about.
+
+The README claim that the suite passed under fast maths was true only on MSVC, and only because
+MSVC's version of the flag is milder. It has been rewritten to say what is actually true, which is
+more interesting than what it used to say.
+
+### Still open
+
+Strict aliasing. `test_type_punning` is the test whose subject is undefined behaviour, so it is the
+one most likely to find something, and MSVC is the least aggressive of the three about it. It now
+passes on gcc as well, which is the compiler most likely to act on a violation, so the `memcpy`
+discipline is holding on at least one optimiser that would punish getting it wrong. Clang had not
+reached it when the first run died in the benchmark; the next run answers that.
+
+Nothing here has been built on anything but x86-64. The layout assumes IEEE-754 binary32, which is
+asserted at compile time, but a big-endian target would want the assumption written down rather than
+inferred from the fact that nobody has tried one.

@@ -1,9 +1,0 @@
-PS E:\Nilo\Onedrive\Documents\2026\Job prep> cd "E:/Nilo/Onedrive/Documents/2026/Job prep/mantissa-state-channel"
-PS E:\Nilo\Onedrive\Documents\2026\Job prep\mantissa-state-channel> mv BRIEF.md "../mantissa-state-channel-BRIEF.md"
-PS E:\Nilo\Onedrive\Documents\2026\Job prep\mantissa-state-channel> rm -rf build build-fast
-Remove-Item : A parameter cannot be found that matches parameter name 'rf'.
-At line:1 char:4
-+ rm -rf build build-fast
-+    ~~~
-    + CategoryInfo          : InvalidArgument: (:) [Remove-Item], ParameterBindingException
-    + FullyQualifiedErrorId : NamedParameterNotFound,Microsoft.PowerShell.Commands.RemoveItemCommand

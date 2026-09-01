@@ -41,7 +41,7 @@ constexpr int trials = 7;
 #  define BENCH_NO_VECTOR __pragma(loop(no_vector))
 #  define BENCH_NO_VECTOR_FN
 #elif defined(__clang__)
-#  define BENCH_NO_VECTOR _Pragma("clang loop vectorize(off)")
+#  define BENCH_NO_VECTOR _Pragma("clang loop vectorize(disable)")
 #  define BENCH_NO_VECTOR_FN
 #elif defined(__GNUC__)
 #  define BENCH_NO_VECTOR

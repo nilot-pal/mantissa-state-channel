@@ -53,14 +53,27 @@ int main() {
     // comparison. A NaN compares false against everything including itself, and
     // a guard written as a comparison is easy to get subtly wrong.
     const float nan_value = sc::from_bits(0x7FC00000u);
+    const float inf_value = sc::from_bits(0x7F800000u);
+
+    // The library's claim, checked in every configuration. This is the one that
+    // matters, and it holds under fast maths because it never looks at the
+    // float.
+    CHECK(ctx, !sc::admissible(nan_value));
+    CHECK(ctx, !sc::admissible(inf_value));
+    CHECK(ctx, !sc::has_payload(nan_value));
+    CHECK(ctx, !sc::has_payload(inf_value));
+
+#if !STATE_CHANNEL_FAST_MATH
+    // The language's behaviour, which is what a guard written as a comparison
+    // would have depended on. Under fast maths these are undefined and are
+    // compiled out, which is precisely the argument for not writing the guards
+    // this way: the same flag that deletes these assertions would have deleted
+    // the guards.
     CHECK(ctx, std::isnan(nan_value));
     CHECK(ctx, !(nan_value == nan_value));
-    CHECK(ctx, !sc::admissible(nan_value));
-
-    const float inf_value = sc::from_bits(0x7F800000u);
     CHECK(ctx, std::isinf(inf_value));
     CHECK(ctx, inf_value > 0.0f);  // positive, and still refused
-    CHECK(ctx, !sc::admissible(inf_value));
+#endif
 
     return ctx.report();
 }
